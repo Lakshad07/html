@@ -1,0 +1,107 @@
+<!-- left- logo,text right-button(order online),bg:black,txt:lightyellow,hover:dark,menu 5,bgimg=center text,down 2 btn-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+         font-family: Arial, Helvetica, sans-serif;
+         background-color: black;
+         margin:0;
+         cursor: pointer;
+      }
+      .row{
+         display: flex;
+      }
+      p{
+        font: 1em sans-serif;
+      }
+      .navbar {
+         width: 100%;
+         background-color: #180101;
+         position:fixed ;
+         top: 0;
+         z-index: 100;
+      }
+      .navbar a{
+         color:white;
+         margin-right: 7px;
+      }
+      .navbar a:hover{
+         color: yellow;
+      }
+      .hero-image{
+         background: center;
+         background-image: linear-gradient(to bottom right,rgba(37, 35, 35, 0.464), rgba(220, 218, 218, 0.8)),url("./img/burg.jpg");
+         background-size: contain;
+         position: relative;
+         height: 600px;
+         background-repeat: no-repeat;
+      }
+      .hero-text{
+         text-align: center;
+         padding-top: 300px; 
+
+      }
+
+      .bt1:hover{
+         color: #ffffff;
+      }
+      .bt2:hover{
+         color: #ffffff;
+      }
+      .bt3{
+         background-color:transparent;
+         padding: 7px;
+         border-radius:12px;
+         color: yellow;
+         border: 2px solid #f5ff3f;
+      }
+      .bt3:hover{
+         color:black;
+         background: #fcff3f;
+        
+      }
+      
+    </style>
+ </head>
+ <body>
+    <div class="navbar">
+      
+      <div class="row">
+         <div style="margin-top:12px;"><img align="left" src="./img/burger.png " style="height: 20px;width: 20px;margin-left: 70px;margin-right:7px;"></div>
+            <div style="text-align: left;color: yellow;margin-top:15px;"><b>Burger Hut</b></div>
+            <div style="margin-left: 300px;">
+               <ul style="list-style: none;display: flex;padding-left: 90px;">
+                  <li><a style="margin-left: 5px;">Home</a></li>
+                  <li><a style="margin-left: 5px;">Menu</a></li>
+                  <li><a style="margin-left: 5px;">About Us</a></li>
+                  <li><a style="margin-left: 5px;">Locations</a></li>
+                  <li><a style="margin-left: 5px;">Contact Us</a></li>
+               </ul>
+            </div>
+            <div>
+               <button class="button bt1" style="background-color: yellow;padding:5px;margin-left:295px;border-radius:12px;margin-top: 10px;">Order Now</button>
+            </div>
+      </div>
+      </div>
+    
+      <div class="hero-image">
+         <div class="hero-text">
+            <center>
+               <h1 style="font-size:30px;color: yellow;">Best Burgers in the Town</h1>
+               <h3 style="color: white;">Cheesy,Irrestible,Juicy</h3>
+            </center>
+         </div>
+         <center>
+         <div>
+            <button class="button bt2" style="background-color: yellow;padding: 8px;border-radius:12px;">Explore Menu</button>
+            <button class="button bt3">Order Now</button>
+         </div>
+         </center>
+      </div>
+   
+ </body>
+ </html>
