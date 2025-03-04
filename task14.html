@@ -5,71 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      body{
-         font-family: Arial, Helvetica, sans-serif;
-         background-color: black;
-         margin:0;
-         cursor: pointer;
-      }
-      .row{
-         display: flex;
-      }
-      p{
-        font: 1em sans-serif;
-      }
-      .navbar {
-         width: 100%;
-         background-color: #180101;
-         position:fixed ;
-         top: 0;
-         z-index: 100;
-      }
-      .navbar a{
-         color:white;
-         margin-right: 7px;
-      }
-      .navbar a:hover{
-         color: yellow;
-      }
-      .hero-image{
-         background: center;
-         background-image: linear-gradient(to bottom right,rgba(37, 35, 35, 0.464), rgba(220, 218, 218, 0.8)),url("./img/burg.jpg");
-         background-size: contain;
-         position: relative;
-         height: 600px;
-         background-repeat: no-repeat;
-      }
-      .hero-text{
-         text-align: center;
-         padding-top: 300px; 
-
-      }
-
-      .bt1:hover{
-         color: #ffffff;
-      }
-      .bt2:hover{
-         color: #ffffff;
-      }
-      .bt3{
-         background-color:transparent;
-         padding: 7px;
-         border-radius:12px;
-         color: yellow;
-         border: 2px solid #f5ff3f;
-      }
-      .bt3:hover{
-         color:black;
-         background: #fcff3f;
-        
-      }
-      
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  </head>
+
  <body>
-    <div class="navbar">
-      
+
+    <div class="navbar">   
       <div class="row">
          <div style="margin-top:12px;"><img align="left" src="./img/burger.png " style="height: 20px;width: 20px;margin-left: 70px;margin-right:7px;"></div>
             <div style="text-align: left;color: yellow;margin-top:15px;"><b>Burger Hut</b></div>
@@ -91,7 +33,7 @@
       <div class="hero-image">
          <div class="hero-text">
             <center>
-               <h1 style="font-size:30px;color: yellow;">Best Burgers in the Town</h1>
+               <h1 style="font-size:50px;color: yellow;"><strong>Best Burgers in the Town</strong></h1>
                <h3 style="color: white;">Cheesy,Irrestible,Juicy</h3>
             </center>
          </div>
@@ -102,6 +44,168 @@
          </div>
          </center>
       </div>
+
+   <section>
+      <h1 style="color: yellow;margin-top: 60px;font-size: 70px;text-align: center;">Our Signature Burgers</h1>
+      <center><h1 style="color: white;">Crafted to perfection with the finest ingredients</h1></center>
+      <div class="card">
+         <div class="card1">
+            <img src="./img/burger1.png" alt="Classic" class="classic">
+            <h2 style="color: yellow;">Classic Burger</h2>
+            <p>Juicy beef patty, fresh lettuce, and creamy sauce.<p>
+            <p style="color: yellow;"><b>$9.99</b><p>
+         </div>
+         <div class="card2">
+            <img src="./img/burger2.png" alt="Cheese" class="cheese">
+            <h2 style="color: yellow;">Cheese Lover Burger</h2>
+            <p>Loaded with melted cheese and crispy bacon.<p>
+            <p style="color: yellow;"><b>$11.99</b><p>
+         </div>
+         <div class="card3">
+            <img src="./img/burger3.png" alt="Spicy" class="spicy">
+            <h2 style="color: yellow;">Spicy Deluxe Burger</h2>
+            <p>Spicy kick with jalapeños and smoky chipotle sauce.</p>
+            <p style="color: yellow;"><b>$12.49</b></p>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class="about-container">
+         <div class="about-content">
+            
+               <div>
+                  <h2 style="color: yellow;font-size: 2.5rem;">About Us</h2>
+               </div>
+                  <p class="about-text">
+                                              At Burger Hut, we’ve been crafting the perfect burger experience since 1999. 
+                                             Our mission is to bring people together over mouthwatering meals made from the 
+                                             freshest ingredients. Whether it’s our signature juicy burgers, crispy fries, 
+                                             or refreshing drinks, every bite is made with love.
+                  </p>
+                  <p class="about-text">
+                                          From humble beginnings to becoming the go-to spot for burger enthusiasts, 
+                                          we owe it all to our loyal customers and passionate team. Thank you for being 
+                                          part of our journey!
+                  </p>
+            </div>
+            <div class="about-img">
+                   <img src="./img/about.jpg">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class="testimonial-container">
+         <h2 class="test-title">What Our Customers Are Saying </h2>
+         <div class="testimonials">
+            <div class="testimonial">
+               <p class="quote">"The best burgers I've ever had! The flavors are amazing, and the service is top-notch."</p>
+               <div class="author">- Alex Johnson</div>
+            </div>
+            <div class="testimonial">
+               <p class="quote">"Absolutely love their cheeseburgers! Always fresh and perfectly cooked."</p>
+               <div class="author">- Mia Rodriguez</div>
+            </div>
+            <div class="testimonial">
+               <p class="quote">"The special sauce is a game-changer. Highly recommend the signature burger!"</p>
+               <div class="author">- Liam Brown</div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class="container">
+            <div class="location-title">Find Us Near You</div>
+         <p class="section-subtitle">Explore our locations and enjoy your favorite burger!</p>
+          <div class="locations-list">
+         <div class="location-card">
+           <h3>Burger Hut Downtown</h3>
+           <p>576,Palakkad Main Road, Kuniyamuthur, Coimbatore, Tamil Nadu 641008</p>
+           <p>Mon-Sun: 10 AM - 10 PM</p>
+         </div>
+         <div class="location-card">
+           <h3>Burger Hut Downtown</h3>
+           <p>576,Palakkad Main Road, Kuniyamuthur, Coimbatore, Tamil Nadu 641008</p>
+           <p>Mon-Sun: 10 AM - 10 PM</p>
+         </div>
+         <div class="location-card">
+           <h3>Burger Hut Downtown</h3>
+           <p>576,Palakkad Main Road, Kuniyamuthur, Coimbatore, Tamil Nadu 641008</p>
+           <p>Mon-Sun: 10 AM - 10 PM</p>
+         </div>
+       </div>
+   </section>
+
+   <section>
+      <div class="col-md-6">
+         <div class="map-container">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.5918613702537!2d76.95110422758763!3d10.93538356006065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85b93193304b3%3A0x84a1fd916be71420!2sCOREGENIC%20IT%20INSTITUTION!5e0!3m2!1sen!2sin!4v1732601948457!5m2!1sen!2sin" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+         </div>
+      </div>
+         <div class="col-md-6">
+          <div class="contact-container">
+            <h2 class="section-title">We’d Love to Hear from You!</h2>
+            <p class="section-subtitle">Reach out to us for any queries or feedback. We’re here to help!</p>
+            
+            <form class="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+         </div>
+   </section>
+
+   <section>
+      <div class="footer">
+        
+         <div class="fcontact">
+            <h2>Contact Us</h2>
+            <p> <i class="fa fa-home"></i> 123 Kovai Pudur, Food City</p>
+            <p> <i class="fa fa-address-card-o"></i> +1 234 567 890</p>
+            <p> <i class="fa fa-envelope"></i> support@burgerhut.com</p>
+        </div>
+        <div class="aboutfcontent">
+            
+         <div>
+            <h2 style="color: yellow;font-size: 1.5rem;margin-top: 25px;">About Us</h2>
+         </div>
+            <p class="about-text">
+                                    From humble beginnings to becoming the go-to spot for burger enthusiasts, 
+                                    we owe it all to our loyal customers and passionate team. Thank you for being 
+                                    part of our journey!
+            </p>
+            <p class="about-text">
+               From humble beginnings to becoming the go-to spot for burger enthusiasts, 
+               we owe it all to our loyal customers and passionate team. Thank you for being 
+               part of our journey!
+            </p>
+      </div>
+      <div class="social-icons">
+         <h2>Follow Us</h2>
+        <a href="#" aria-label="Facebook"><i class="fa fa-facebook "></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+      </div>
+         <div class="copy">
+            <center>
+               <p>Designed by Swetha</p>
+            </center>
+         </div>
+      </div>
+</section> 
    
+
  </body>
  </html>
